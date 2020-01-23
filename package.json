@@ -1,0 +1,30 @@
+{
+  "name": "fancy-weather",
+  "version": "0.0.1",
+  "description": "weather app",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "9pasha"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "9pasha",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.7.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6"
+  }
+}

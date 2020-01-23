@@ -1,0 +1,155 @@
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .user-input {
+        width: 68%;
+        min-width: 375px;
+        height: 3.5%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        top: 7%;
+    }
+
+    .left-buttons {
+        width: 150px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__btn {
+            color: $white-color;
+            background-color: $btn-color;
+            border-radius: $btn-radius;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+
+        .change-btn {
+            width: 28px;
+            height: 28px;
+        }
+
+        .lang-btn {
+            width: 36px;
+            height: 28px;
+            text-align: center;
+            cursor: pointer;
+
+            &__text {
+                position: relative;
+                top: 1px;
+                font-family: 'Arimo';
+            }
+        }
+
+        .temperature-btn {
+            width: 40%;
+            height: 28px;
+            display: flex;
+            border-radius: $btn-radius;
+
+            &__switch-1, &__switch-2 {
+                width: 50%;
+                height: 28px;
+                border-radius: 0;
+                outline: none;
+                background-color: $btn-dark-color;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+            }
+
+            &__switch-1 {
+                border-top-left-radius: $btn-radius;
+                border-bottom-left-radius: $btn-radius;
+            }
+
+            &__switch-2 {
+                border-top-right-radius: $btn-radius;
+                border-bottom-right-radius: $btn-radius;
+            }
+
+            .active {
+                background: $btn-color;
+            }
+        }
+    }
+
+    .right-input {
+        width: 35%;
+        height: 100%;
+        min-width: 190px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .input {
+            width: 70%;
+            height: 28px;
+            border: none;
+            background-color: $btn-dark-color;
+            border-top-left-radius: $btn-radius;
+            border-bottom-left-radius: $btn-radius;
+            padding-right: 3%;
+            padding-left: 3%;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .search-btn {
+            width: 30%;
+            height: 28px;
+            border: none;
+            background-color: $btn-color;
+            color: $white-color;
+            font-size: 14px;
+            text-transform: uppercase;
+            outline: none;
+            border-top-right-radius: $btn-radius;
+            border-bottom-right-radius: $btn-radius;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main .right-input .search-btn {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main .user-input {
+        top: 17px;
+    }
+
+    .main .right-input .search-btn {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .main .user-input {
+        min-width: 68%;
+        height: 136px;
+        flex-direction: column;
+        top: 6%;
+    }
+}

@@ -1,0 +1,16 @@
+$white-color: #ffff;
+$btn-color: rgba(174, 181, 185, 0.5);
+$btn-dark-color: rgba(76, 82, 85, 0.4);
+$hover-color: rgba(95, 119, 131, 0.932);
+$btn-radius: 5px;
+
+@mixin flex {
+  display: flex;
+  justify-content: space-around;
+  align-content: center; 
+}
+
+@font-face {
+  font-family: 'Arimo';
+  src: url('../../assets/fonts/Arimo-Regular.ttf');
+}

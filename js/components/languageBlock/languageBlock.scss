@@ -1,0 +1,21 @@
+.language-block {
+    @include flex;
+    flex-direction: column;
+    color: $white-color;
+    font-family: 'Arimo';
+    font-size: 14px;
+
+    .lang-item {
+        background-color: $btn-color;
+        border-radius: $btn-radius;
+        border: 2px solid $btn-dark-color;
+        height: 25px;
+        @include flex;
+        align-items: center;
+
+        &:hover {
+            background-color: $btn-dark-color;
+            cursor: pointer;
+        }
+    }
+}
